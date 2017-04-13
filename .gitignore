@@ -34,7 +34,7 @@
 # IntelliJ
 /out/
 /src/META-INF/
-
+/src/NameRating.META-INF/
 
 # mpeltonen/sbt-idea plugin
 .idea_modules/
