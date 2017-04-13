@@ -1,0 +1,554 @@
+margaretpearce$ hadoop MovieNamesRatings /ratings.csv /movies.csv output_titles > sample_run_titles.txt
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/Users/margaretpearce/hadoop-2.8.0/share/hadoop/common/lib/slf4j-log4j12-1.7.10.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:MovieLensMapReduce_jar2/MovieLensNameMapReduce.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+17/04/12 21:50:43 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+17/04/12 21:50:43 INFO Configuration.deprecation: session.id is deprecated. Instead, use dfs.metrics.session-id
+17/04/12 21:50:43 INFO jvm.JvmMetrics: Initializing JVM Metrics with processName=JobTracker, sessionId=
+17/04/12 21:50:44 WARN mapreduce.JobResourceUploader: Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+17/04/12 21:50:46 INFO input.FileInputFormat: Total input files to process : 1
+17/04/12 21:50:47 INFO input.FileInputFormat: Total input files to process : 1
+17/04/12 21:50:47 INFO mapreduce.JobSubmitter: number of splits:17
+17/04/12 21:50:47 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_local1307245161_0001
+17/04/12 21:50:47 INFO mapreduce.Job: The url to track the job: http://localhost:8080/
+17/04/12 21:50:47 INFO mapreduce.Job: Running job: job_local1307245161_0001
+17/04/12 21:50:47 INFO mapred.LocalJobRunner: OutputCommitter set in config null
+17/04/12 21:50:47 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 1
+17/04/12 21:50:47 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+17/04/12 21:50:47 INFO mapred.LocalJobRunner: OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+17/04/12 21:50:47 INFO mapred.LocalJobRunner: Waiting for map tasks
+17/04/12 21:50:47 INFO mapred.LocalJobRunner: Starting task: attempt_local1307245161_0001_m_000000_0
+17/04/12 21:50:47 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 1
+17/04/12 21:50:47 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+17/04/12 21:50:47 INFO util.ProcfsBasedProcessTree: ProcfsBasedProcessTree currently is supported only on Linux.
+17/04/12 21:50:47 INFO mapred.Task:  Using ResourceCalculatorProcessTree : null
+17/04/12 21:50:47 INFO mapred.MapTask: Processing split: file:/ratings.csv:0+33554432
+17/04/12 21:50:47 INFO mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+17/04/12 21:50:47 INFO mapred.MapTask: mapreduce.task.io.sort.mb: 100
+17/04/12 21:50:47 INFO mapred.MapTask: soft limit at 83886080
+17/04/12 21:50:47 INFO mapred.MapTask: bufstart = 0; bufvoid = 104857600
+17/04/12 21:50:47 INFO mapred.MapTask: kvstart = 26214396; length = 6553600
+17/04/12 21:50:47 INFO mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+17/04/12 21:50:48 INFO mapreduce.Job: Job job_local1307245161_0001 running in uber mode : false
+17/04/12 21:50:48 INFO mapreduce.Job:  map 0% reduce 0%
+17/04/12 21:50:48 INFO mapred.LocalJobRunner: 
+17/04/12 21:50:48 INFO mapred.MapTask: Starting flush of map output
+17/04/12 21:50:48 INFO mapred.MapTask: Spilling map output
+17/04/12 21:50:48 INFO mapred.MapTask: bufstart = 0; bufend = 19862910; bufvoid = 104857600
+17/04/12 21:50:48 INFO mapred.MapTask: kvstart = 26214396(104857584); kvend = 20917624(83670496); length = 5296773/6553600
+17/04/12 21:50:49 INFO mapred.MapTask: Finished spill 0
+17/04/12 21:50:50 INFO mapred.Task: Task:attempt_local1307245161_0001_m_000000_0 is done. And is in the process of committing
+17/04/12 21:50:50 INFO mapred.LocalJobRunner: map
+17/04/12 21:50:50 INFO mapred.Task: Task 'attempt_local1307245161_0001_m_000000_0' done.
+17/04/12 21:50:50 INFO mapred.LocalJobRunner: Finishing task: attempt_local1307245161_0001_m_000000_0
+17/04/12 21:50:50 INFO mapred.LocalJobRunner: Starting task: attempt_local1307245161_0001_m_000001_0
+17/04/12 21:50:50 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 1
+17/04/12 21:50:50 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+17/04/12 21:50:50 INFO util.ProcfsBasedProcessTree: ProcfsBasedProcessTree currently is supported only on Linux.
+17/04/12 21:50:50 INFO mapred.Task:  Using ResourceCalculatorProcessTree : null
+17/04/12 21:50:50 INFO mapred.MapTask: Processing split: file:/ratings.csv:33554432+33554432
+17/04/12 21:50:50 INFO mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+17/04/12 21:50:50 INFO mapred.MapTask: mapreduce.task.io.sort.mb: 100
+17/04/12 21:50:50 INFO mapred.MapTask: soft limit at 83886080
+17/04/12 21:50:50 INFO mapred.MapTask: bufstart = 0; bufvoid = 104857600
+17/04/12 21:50:50 INFO mapred.MapTask: kvstart = 26214396; length = 6553600
+17/04/12 21:50:50 INFO mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+17/04/12 21:50:50 INFO mapreduce.Job:  map 100% reduce 0%
+17/04/12 21:50:50 INFO mapred.LocalJobRunner: 
+17/04/12 21:50:51 INFO mapred.MapTask: Starting flush of map output
+17/04/12 21:50:51 INFO mapred.MapTask: Spilling map output
+17/04/12 21:50:51 INFO mapred.MapTask: bufstart = 0; bufend = 19090680; bufvoid = 104857600
+17/04/12 21:50:51 INFO mapred.MapTask: kvstart = 26214396(104857584); kvend = 21123552(84494208); length = 5090845/6553600
+17/04/12 21:50:51 INFO mapreduce.Job:  map 6% reduce 0%
+17/04/12 21:50:52 INFO mapred.MapTask: Finished spill 0
+17/04/12 21:50:52 INFO mapred.Task: Task:attempt_local1307245161_0001_m_000001_0 is done. And is in the process of committing
+17/04/12 21:50:52 INFO mapred.LocalJobRunner: map
+17/04/12 21:50:52 INFO mapred.Task: Task 'attempt_local1307245161_0001_m_000001_0' done.
+17/04/12 21:50:52 INFO mapred.LocalJobRunner: Finishing task: attempt_local1307245161_0001_m_000001_0
+17/04/12 21:50:52 INFO mapred.LocalJobRunner: Starting task: attempt_local1307245161_0001_m_000002_0
+17/04/12 21:50:52 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 1
+17/04/12 21:50:52 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+17/04/12 21:50:52 INFO util.ProcfsBasedProcessTree: ProcfsBasedProcessTree currently is supported only on Linux.
+17/04/12 21:50:52 INFO mapred.Task:  Using ResourceCalculatorProcessTree : null
+17/04/12 21:50:52 INFO mapred.MapTask: Processing split: file:/ratings.csv:67108864+33554432
+17/04/12 21:50:52 INFO mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+17/04/12 21:50:52 INFO mapred.MapTask: mapreduce.task.io.sort.mb: 100
+17/04/12 21:50:52 INFO mapred.MapTask: soft limit at 83886080
+17/04/12 21:50:52 INFO mapred.MapTask: bufstart = 0; bufvoid = 104857600
+17/04/12 21:50:52 INFO mapred.MapTask: kvstart = 26214396; length = 6553600
+17/04/12 21:50:52 INFO mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+17/04/12 21:50:52 INFO mapreduce.Job:  map 100% reduce 0%
+17/04/12 21:50:53 INFO mapred.LocalJobRunner: 
+17/04/12 21:50:53 INFO mapred.MapTask: Starting flush of map output
+17/04/12 21:50:53 INFO mapred.MapTask: Spilling map output
+17/04/12 21:50:53 INFO mapred.MapTask: bufstart = 0; bufend = 18992340; bufvoid = 104857600
+17/04/12 21:50:53 INFO mapred.MapTask: kvstart = 26214396(104857584); kvend = 21149776(84599104); length = 5064621/6553600
+17/04/12 21:50:53 INFO mapreduce.Job:  map 12% reduce 0%
+17/04/12 21:50:54 INFO mapred.MapTask: Finished spill 0
+17/04/12 21:50:54 INFO mapred.Task: Task:attempt_local1307245161_0001_m_000002_0 is done. And is in the process of committing
+17/04/12 21:50:54 INFO mapred.LocalJobRunner: map
+17/04/12 21:50:54 INFO mapred.Task: Task 'attempt_local1307245161_0001_m_000002_0' done.
+17/04/12 21:50:54 INFO mapred.LocalJobRunner: Finishing task: attempt_local1307245161_0001_m_000002_0
+17/04/12 21:50:54 INFO mapred.LocalJobRunner: Starting task: attempt_local1307245161_0001_m_000003_0
+17/04/12 21:50:54 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 1
+17/04/12 21:50:54 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+17/04/12 21:50:54 INFO util.ProcfsBasedProcessTree: ProcfsBasedProcessTree currently is supported only on Linux.
+17/04/12 21:50:54 INFO mapred.Task:  Using ResourceCalculatorProcessTree : null
+17/04/12 21:50:54 INFO mapred.MapTask: Processing split: file:/ratings.csv:100663296+33554432
+17/04/12 21:50:54 INFO mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+17/04/12 21:50:54 INFO mapred.MapTask: mapreduce.task.io.sort.mb: 100
+17/04/12 21:50:54 INFO mapred.MapTask: soft limit at 83886080
+17/04/12 21:50:54 INFO mapred.MapTask: bufstart = 0; bufvoid = 104857600
+17/04/12 21:50:54 INFO mapred.MapTask: kvstart = 26214396; length = 6553600
+17/04/12 21:50:54 INFO mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+17/04/12 21:50:55 INFO mapred.LocalJobRunner: 
+17/04/12 21:50:55 INFO mapred.MapTask: Starting flush of map output
+17/04/12 21:50:55 INFO mapred.MapTask: Spilling map output
+17/04/12 21:50:55 INFO mapred.MapTask: bufstart = 0; bufend = 19001970; bufvoid = 104857600
+17/04/12 21:50:55 INFO mapred.MapTask: kvstart = 26214396(104857584); kvend = 21147208(84588832); length = 5067189/6553600
+17/04/12 21:50:55 INFO mapreduce.Job:  map 18% reduce 0%
+17/04/12 21:50:56 INFO mapred.MapTask: Finished spill 0
+17/04/12 21:50:56 INFO mapred.Task: Task:attempt_local1307245161_0001_m_000003_0 is done. And is in the process of committing
+17/04/12 21:50:56 INFO mapred.LocalJobRunner: map
+17/04/12 21:50:56 INFO mapred.Task: Task 'attempt_local1307245161_0001_m_000003_0' done.
+17/04/12 21:50:56 INFO mapred.LocalJobRunner: Finishing task: attempt_local1307245161_0001_m_000003_0
+17/04/12 21:50:56 INFO mapred.LocalJobRunner: Starting task: attempt_local1307245161_0001_m_000004_0
+17/04/12 21:50:56 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 1
+17/04/12 21:50:56 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+17/04/12 21:50:56 INFO util.ProcfsBasedProcessTree: ProcfsBasedProcessTree currently is supported only on Linux.
+17/04/12 21:50:56 INFO mapred.Task:  Using ResourceCalculatorProcessTree : null
+17/04/12 21:50:56 INFO mapred.MapTask: Processing split: file:/ratings.csv:134217728+33554432
+17/04/12 21:50:56 INFO mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+17/04/12 21:50:56 INFO mapred.MapTask: mapreduce.task.io.sort.mb: 100
+17/04/12 21:50:56 INFO mapred.MapTask: soft limit at 83886080
+17/04/12 21:50:56 INFO mapred.MapTask: bufstart = 0; bufvoid = 104857600
+17/04/12 21:50:56 INFO mapred.MapTask: kvstart = 26214396; length = 6553600
+17/04/12 21:50:56 INFO mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+17/04/12 21:50:57 INFO mapred.LocalJobRunner: 
+17/04/12 21:50:57 INFO mapred.MapTask: Starting flush of map output
+17/04/12 21:50:57 INFO mapred.MapTask: Spilling map output
+17/04/12 21:50:57 INFO mapred.MapTask: bufstart = 0; bufend = 19011330; bufvoid = 104857600
+17/04/12 21:50:57 INFO mapred.MapTask: kvstart = 26214396(104857584); kvend = 21144712(84578848); length = 5069685/6553600
+17/04/12 21:50:57 INFO mapreduce.Job:  map 24% reduce 0%
+17/04/12 21:50:58 INFO mapred.MapTask: Finished spill 0
+17/04/12 21:50:58 INFO mapred.Task: Task:attempt_local1307245161_0001_m_000004_0 is done. And is in the process of committing
+17/04/12 21:50:58 INFO mapred.LocalJobRunner: map
+17/04/12 21:50:58 INFO mapred.Task: Task 'attempt_local1307245161_0001_m_000004_0' done.
+17/04/12 21:50:58 INFO mapred.LocalJobRunner: Finishing task: attempt_local1307245161_0001_m_000004_0
+17/04/12 21:50:58 INFO mapred.LocalJobRunner: Starting task: attempt_local1307245161_0001_m_000005_0
+17/04/12 21:50:58 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 1
+17/04/12 21:50:58 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+17/04/12 21:50:58 INFO util.ProcfsBasedProcessTree: ProcfsBasedProcessTree currently is supported only on Linux.
+17/04/12 21:50:58 INFO mapred.Task:  Using ResourceCalculatorProcessTree : null
+17/04/12 21:50:58 INFO mapred.MapTask: Processing split: file:/ratings.csv:167772160+33554432
+17/04/12 21:50:58 INFO mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+17/04/12 21:50:58 INFO mapred.MapTask: mapreduce.task.io.sort.mb: 100
+17/04/12 21:50:58 INFO mapred.MapTask: soft limit at 83886080
+17/04/12 21:50:58 INFO mapred.MapTask: bufstart = 0; bufvoid = 104857600
+17/04/12 21:50:58 INFO mapred.MapTask: kvstart = 26214396; length = 6553600
+17/04/12 21:50:58 INFO mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+17/04/12 21:50:59 INFO mapreduce.Job:  map 100% reduce 0%
+17/04/12 21:50:59 INFO mapred.LocalJobRunner: 
+17/04/12 21:50:59 INFO mapred.MapTask: Starting flush of map output
+17/04/12 21:50:59 INFO mapred.MapTask: Spilling map output
+17/04/12 21:50:59 INFO mapred.MapTask: bufstart = 0; bufend = 18997275; bufvoid = 104857600
+17/04/12 21:50:59 INFO mapred.MapTask: kvstart = 26214396(104857584); kvend = 21148460(84593840); length = 5065937/6553600
+17/04/12 21:51:00 INFO mapreduce.Job:  map 29% reduce 0%
+17/04/12 21:51:00 INFO mapred.MapTask: Finished spill 0
+17/04/12 21:51:00 INFO mapred.Task: Task:attempt_local1307245161_0001_m_000005_0 is done. And is in the process of committing
+17/04/12 21:51:00 INFO mapred.LocalJobRunner: map
+17/04/12 21:51:00 INFO mapred.Task: Task 'attempt_local1307245161_0001_m_000005_0' done.
+17/04/12 21:51:00 INFO mapred.LocalJobRunner: Finishing task: attempt_local1307245161_0001_m_000005_0
+17/04/12 21:51:00 INFO mapred.LocalJobRunner: Starting task: attempt_local1307245161_0001_m_000006_0
+17/04/12 21:51:00 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 1
+17/04/12 21:51:00 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+17/04/12 21:51:00 INFO util.ProcfsBasedProcessTree: ProcfsBasedProcessTree currently is supported only on Linux.
+17/04/12 21:51:00 INFO mapred.Task:  Using ResourceCalculatorProcessTree : null
+17/04/12 21:51:00 INFO mapred.MapTask: Processing split: file:/ratings.csv:201326592+33554432
+17/04/12 21:51:00 INFO mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+17/04/12 21:51:00 INFO mapred.MapTask: mapreduce.task.io.sort.mb: 100
+17/04/12 21:51:00 INFO mapred.MapTask: soft limit at 83886080
+17/04/12 21:51:00 INFO mapred.MapTask: bufstart = 0; bufvoid = 104857600
+17/04/12 21:51:00 INFO mapred.MapTask: kvstart = 26214396; length = 6553600
+17/04/12 21:51:00 INFO mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+17/04/12 21:51:01 INFO mapreduce.Job:  map 100% reduce 0%
+17/04/12 21:51:01 INFO mapred.LocalJobRunner: 
+17/04/12 21:51:01 INFO mapred.MapTask: Starting flush of map output
+17/04/12 21:51:01 INFO mapred.MapTask: Spilling map output
+17/04/12 21:51:01 INFO mapred.MapTask: bufstart = 0; bufend = 19006440; bufvoid = 104857600
+17/04/12 21:51:01 INFO mapred.MapTask: kvstart = 26214396(104857584); kvend = 21146016(84584064); length = 5068381/6553600
+17/04/12 21:51:02 INFO mapreduce.Job:  map 35% reduce 0%
+17/04/12 21:51:02 INFO mapred.MapTask: Finished spill 0
+17/04/12 21:51:03 INFO mapred.Task: Task:attempt_local1307245161_0001_m_000006_0 is done. And is in the process of committing
+17/04/12 21:51:03 INFO mapred.LocalJobRunner: map
+17/04/12 21:51:03 INFO mapred.Task: Task 'attempt_local1307245161_0001_m_000006_0' done.
+17/04/12 21:51:03 INFO mapred.LocalJobRunner: Finishing task: attempt_local1307245161_0001_m_000006_0
+17/04/12 21:51:03 INFO mapred.LocalJobRunner: Starting task: attempt_local1307245161_0001_m_000007_0
+17/04/12 21:51:03 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 1
+17/04/12 21:51:03 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+17/04/12 21:51:03 INFO util.ProcfsBasedProcessTree: ProcfsBasedProcessTree currently is supported only on Linux.
+17/04/12 21:51:03 INFO mapred.Task:  Using ResourceCalculatorProcessTree : null
+17/04/12 21:51:03 INFO mapred.MapTask: Processing split: file:/ratings.csv:234881024+33554432
+17/04/12 21:51:03 INFO mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+17/04/12 21:51:03 INFO mapred.MapTask: mapreduce.task.io.sort.mb: 100
+17/04/12 21:51:03 INFO mapred.MapTask: soft limit at 83886080
+17/04/12 21:51:03 INFO mapred.MapTask: bufstart = 0; bufvoid = 104857600
+17/04/12 21:51:03 INFO mapred.MapTask: kvstart = 26214396; length = 6553600
+17/04/12 21:51:03 INFO mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+17/04/12 21:51:03 INFO mapreduce.Job:  map 100% reduce 0%
+17/04/12 21:51:04 INFO mapred.LocalJobRunner: 
+17/04/12 21:51:04 INFO mapred.MapTask: Starting flush of map output
+17/04/12 21:51:04 INFO mapred.MapTask: Spilling map output
+17/04/12 21:51:04 INFO mapred.MapTask: bufstart = 0; bufend = 19021080; bufvoid = 104857600
+17/04/12 21:51:04 INFO mapred.MapTask: kvstart = 26214396(104857584); kvend = 21142112(84568448); length = 5072285/6553600
+17/04/12 21:51:04 INFO mapreduce.Job:  map 41% reduce 0%
+17/04/12 21:51:05 INFO mapred.MapTask: Finished spill 0
+17/04/12 21:51:05 INFO mapred.Task: Task:attempt_local1307245161_0001_m_000007_0 is done. And is in the process of committing
+17/04/12 21:51:05 INFO mapred.LocalJobRunner: map
+17/04/12 21:51:05 INFO mapred.Task: Task 'attempt_local1307245161_0001_m_000007_0' done.
+17/04/12 21:51:05 INFO mapred.LocalJobRunner: Finishing task: attempt_local1307245161_0001_m_000007_0
+17/04/12 21:51:05 INFO mapred.LocalJobRunner: Starting task: attempt_local1307245161_0001_m_000008_0
+17/04/12 21:51:05 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 1
+17/04/12 21:51:05 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+17/04/12 21:51:05 INFO util.ProcfsBasedProcessTree: ProcfsBasedProcessTree currently is supported only on Linux.
+17/04/12 21:51:05 INFO mapred.Task:  Using ResourceCalculatorProcessTree : null
+17/04/12 21:51:05 INFO mapred.MapTask: Processing split: file:/ratings.csv:268435456+33554432
+17/04/12 21:51:05 INFO mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+17/04/12 21:51:05 INFO mapred.MapTask: mapreduce.task.io.sort.mb: 100
+17/04/12 21:51:05 INFO mapred.MapTask: soft limit at 83886080
+17/04/12 21:51:05 INFO mapred.MapTask: bufstart = 0; bufvoid = 104857600
+17/04/12 21:51:05 INFO mapred.MapTask: kvstart = 26214396; length = 6553600
+17/04/12 21:51:05 INFO mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+17/04/12 21:51:06 INFO mapred.LocalJobRunner: 
+17/04/12 21:51:06 INFO mapred.MapTask: Starting flush of map output
+17/04/12 21:51:06 INFO mapred.MapTask: Spilling map output
+17/04/12 21:51:06 INFO mapred.MapTask: bufstart = 0; bufend = 19004760; bufvoid = 104857600
+17/04/12 21:51:06 INFO mapred.MapTask: kvstart = 26214396(104857584); kvend = 21146464(84585856); length = 5067933/6553600
+17/04/12 21:51:06 INFO mapreduce.Job:  map 47% reduce 0%
+17/04/12 21:51:07 INFO mapred.MapTask: Finished spill 0
+17/04/12 21:51:07 INFO mapred.Task: Task:attempt_local1307245161_0001_m_000008_0 is done. And is in the process of committing
+17/04/12 21:51:07 INFO mapred.LocalJobRunner: map
+17/04/12 21:51:07 INFO mapred.Task: Task 'attempt_local1307245161_0001_m_000008_0' done.
+17/04/12 21:51:07 INFO mapred.LocalJobRunner: Finishing task: attempt_local1307245161_0001_m_000008_0
+17/04/12 21:51:07 INFO mapred.LocalJobRunner: Starting task: attempt_local1307245161_0001_m_000009_0
+17/04/12 21:51:07 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 1
+17/04/12 21:51:07 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+17/04/12 21:51:07 INFO util.ProcfsBasedProcessTree: ProcfsBasedProcessTree currently is supported only on Linux.
+17/04/12 21:51:07 INFO mapred.Task:  Using ResourceCalculatorProcessTree : null
+17/04/12 21:51:07 INFO mapred.MapTask: Processing split: file:/ratings.csv:301989888+33554432
+17/04/12 21:51:07 INFO mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+17/04/12 21:51:07 INFO mapred.MapTask: mapreduce.task.io.sort.mb: 100
+17/04/12 21:51:07 INFO mapred.MapTask: soft limit at 83886080
+17/04/12 21:51:07 INFO mapred.MapTask: bufstart = 0; bufvoid = 104857600
+17/04/12 21:51:07 INFO mapred.MapTask: kvstart = 26214396; length = 6553600
+17/04/12 21:51:07 INFO mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+17/04/12 21:51:08 INFO mapreduce.Job:  map 100% reduce 0%
+17/04/12 21:51:08 INFO mapred.LocalJobRunner: 
+17/04/12 21:51:08 INFO mapred.MapTask: Starting flush of map output
+17/04/12 21:51:08 INFO mapred.MapTask: Spilling map output
+17/04/12 21:51:08 INFO mapred.MapTask: bufstart = 0; bufend = 19008750; bufvoid = 104857600
+17/04/12 21:51:08 INFO mapred.MapTask: kvstart = 26214396(104857584); kvend = 21145400(84581600); length = 5068997/6553600
+17/04/12 21:51:09 INFO mapreduce.Job:  map 53% reduce 0%
+17/04/12 21:51:09 INFO mapred.MapTask: Finished spill 0
+17/04/12 21:51:09 INFO mapred.Task: Task:attempt_local1307245161_0001_m_000009_0 is done. And is in the process of committing
+17/04/12 21:51:09 INFO mapred.LocalJobRunner: map
+17/04/12 21:51:09 INFO mapred.Task: Task 'attempt_local1307245161_0001_m_000009_0' done.
+17/04/12 21:51:09 INFO mapred.LocalJobRunner: Finishing task: attempt_local1307245161_0001_m_000009_0
+17/04/12 21:51:09 INFO mapred.LocalJobRunner: Starting task: attempt_local1307245161_0001_m_000010_0
+17/04/12 21:51:09 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 1
+17/04/12 21:51:09 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+17/04/12 21:51:09 INFO util.ProcfsBasedProcessTree: ProcfsBasedProcessTree currently is supported only on Linux.
+17/04/12 21:51:09 INFO mapred.Task:  Using ResourceCalculatorProcessTree : null
+17/04/12 21:51:09 INFO mapred.MapTask: Processing split: file:/ratings.csv:335544320+33554432
+17/04/12 21:51:09 INFO mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+17/04/12 21:51:09 INFO mapred.MapTask: mapreduce.task.io.sort.mb: 100
+17/04/12 21:51:09 INFO mapred.MapTask: soft limit at 83886080
+17/04/12 21:51:09 INFO mapred.MapTask: bufstart = 0; bufvoid = 104857600
+17/04/12 21:51:09 INFO mapred.MapTask: kvstart = 26214396; length = 6553600
+17/04/12 21:51:09 INFO mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+17/04/12 21:51:10 INFO mapreduce.Job:  map 100% reduce 0%
+17/04/12 21:51:10 INFO mapred.LocalJobRunner: 
+17/04/12 21:51:10 INFO mapred.MapTask: Starting flush of map output
+17/04/12 21:51:10 INFO mapred.MapTask: Spilling map output
+17/04/12 21:51:10 INFO mapred.MapTask: bufstart = 0; bufend = 19013760; bufvoid = 104857600
+17/04/12 21:51:10 INFO mapred.MapTask: kvstart = 26214396(104857584); kvend = 21144064(84576256); length = 5070333/6553600
+17/04/12 21:51:11 INFO mapreduce.Job:  map 59% reduce 0%
+17/04/12 21:51:11 INFO mapred.MapTask: Finished spill 0
+17/04/12 21:51:11 INFO mapred.Task: Task:attempt_local1307245161_0001_m_000010_0 is done. And is in the process of committing
+17/04/12 21:51:11 INFO mapred.LocalJobRunner: map
+17/04/12 21:51:11 INFO mapred.Task: Task 'attempt_local1307245161_0001_m_000010_0' done.
+17/04/12 21:51:11 INFO mapred.LocalJobRunner: Finishing task: attempt_local1307245161_0001_m_000010_0
+17/04/12 21:51:11 INFO mapred.LocalJobRunner: Starting task: attempt_local1307245161_0001_m_000011_0
+17/04/12 21:51:11 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 1
+17/04/12 21:51:11 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+17/04/12 21:51:11 INFO util.ProcfsBasedProcessTree: ProcfsBasedProcessTree currently is supported only on Linux.
+17/04/12 21:51:11 INFO mapred.Task:  Using ResourceCalculatorProcessTree : null
+17/04/12 21:51:11 INFO mapred.MapTask: Processing split: file:/ratings.csv:369098752+33554432
+17/04/12 21:51:11 INFO mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+17/04/12 21:51:11 INFO mapred.MapTask: mapreduce.task.io.sort.mb: 100
+17/04/12 21:51:11 INFO mapred.MapTask: soft limit at 83886080
+17/04/12 21:51:11 INFO mapred.MapTask: bufstart = 0; bufvoid = 104857600
+17/04/12 21:51:11 INFO mapred.MapTask: kvstart = 26214396; length = 6553600
+17/04/12 21:51:11 INFO mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+17/04/12 21:51:12 INFO mapreduce.Job:  map 100% reduce 0%
+17/04/12 21:51:12 INFO mapred.LocalJobRunner: 
+17/04/12 21:51:12 INFO mapred.MapTask: Starting flush of map output
+17/04/12 21:51:12 INFO mapred.MapTask: Spilling map output
+17/04/12 21:51:12 INFO mapred.MapTask: bufstart = 0; bufend = 18581115; bufvoid = 104857600
+17/04/12 21:51:12 INFO mapred.MapTask: kvstart = 26214396(104857584); kvend = 21259436(85037744); length = 4954961/6553600
+17/04/12 21:51:13 INFO mapreduce.Job:  map 65% reduce 0%
+17/04/12 21:51:13 INFO mapred.MapTask: Finished spill 0
+17/04/12 21:51:14 INFO mapred.Task: Task:attempt_local1307245161_0001_m_000011_0 is done. And is in the process of committing
+17/04/12 21:51:14 INFO mapred.LocalJobRunner: map
+17/04/12 21:51:14 INFO mapred.Task: Task 'attempt_local1307245161_0001_m_000011_0' done.
+17/04/12 21:51:14 INFO mapred.LocalJobRunner: Finishing task: attempt_local1307245161_0001_m_000011_0
+17/04/12 21:51:14 INFO mapred.LocalJobRunner: Starting task: attempt_local1307245161_0001_m_000012_0
+17/04/12 21:51:14 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 1
+17/04/12 21:51:14 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+17/04/12 21:51:14 INFO util.ProcfsBasedProcessTree: ProcfsBasedProcessTree currently is supported only on Linux.
+17/04/12 21:51:14 INFO mapred.Task:  Using ResourceCalculatorProcessTree : null
+17/04/12 21:51:14 INFO mapred.MapTask: Processing split: file:/ratings.csv:402653184+33554432
+17/04/12 21:51:14 INFO mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+17/04/12 21:51:14 INFO mapred.MapTask: mapreduce.task.io.sort.mb: 100
+17/04/12 21:51:14 INFO mapred.MapTask: soft limit at 83886080
+17/04/12 21:51:14 INFO mapred.MapTask: bufstart = 0; bufvoid = 104857600
+17/04/12 21:51:14 INFO mapred.MapTask: kvstart = 26214396; length = 6553600
+17/04/12 21:51:14 INFO mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+17/04/12 21:51:14 INFO mapreduce.Job:  map 100% reduce 0%
+17/04/12 21:51:15 INFO mapred.LocalJobRunner: 
+17/04/12 21:51:15 INFO mapred.MapTask: Starting flush of map output
+17/04/12 21:51:15 INFO mapred.MapTask: Spilling map output
+17/04/12 21:51:15 INFO mapred.MapTask: bufstart = 0; bufend = 18321150; bufvoid = 104857600
+17/04/12 21:51:15 INFO mapred.MapTask: kvstart = 26214396(104857584); kvend = 21328760(85315040); length = 4885637/6553600
+17/04/12 21:51:15 INFO mapreduce.Job:  map 71% reduce 0%
+17/04/12 21:51:16 INFO mapred.MapTask: Finished spill 0
+17/04/12 21:51:16 INFO mapred.Task: Task:attempt_local1307245161_0001_m_000012_0 is done. And is in the process of committing
+17/04/12 21:51:16 INFO mapred.LocalJobRunner: map
+17/04/12 21:51:16 INFO mapred.Task: Task 'attempt_local1307245161_0001_m_000012_0' done.
+17/04/12 21:51:16 INFO mapred.LocalJobRunner: Finishing task: attempt_local1307245161_0001_m_000012_0
+17/04/12 21:51:16 INFO mapred.LocalJobRunner: Starting task: attempt_local1307245161_0001_m_000013_0
+17/04/12 21:51:16 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 1
+17/04/12 21:51:16 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+17/04/12 21:51:16 INFO util.ProcfsBasedProcessTree: ProcfsBasedProcessTree currently is supported only on Linux.
+17/04/12 21:51:16 INFO mapred.Task:  Using ResourceCalculatorProcessTree : null
+17/04/12 21:51:16 INFO mapred.MapTask: Processing split: file:/ratings.csv:436207616+33554432
+17/04/12 21:51:16 INFO mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+17/04/12 21:51:16 INFO mapred.MapTask: mapreduce.task.io.sort.mb: 100
+17/04/12 21:51:16 INFO mapred.MapTask: soft limit at 83886080
+17/04/12 21:51:16 INFO mapred.MapTask: bufstart = 0; bufvoid = 104857600
+17/04/12 21:51:16 INFO mapred.MapTask: kvstart = 26214396; length = 6553600
+17/04/12 21:51:16 INFO mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+17/04/12 21:51:16 INFO mapreduce.Job:  map 100% reduce 0%
+17/04/12 21:51:17 INFO mapred.LocalJobRunner: 
+17/04/12 21:51:17 INFO mapred.MapTask: Starting flush of map output
+17/04/12 21:51:17 INFO mapred.MapTask: Spilling map output
+17/04/12 21:51:17 INFO mapred.MapTask: bufstart = 0; bufend = 18311670; bufvoid = 104857600
+17/04/12 21:51:17 INFO mapred.MapTask: kvstart = 26214396(104857584); kvend = 21331288(85325152); length = 4883109/6553600
+17/04/12 21:51:17 INFO mapreduce.Job:  map 76% reduce 0%
+17/04/12 21:51:18 INFO mapred.MapTask: Finished spill 0
+17/04/12 21:51:18 INFO mapred.Task: Task:attempt_local1307245161_0001_m_000013_0 is done. And is in the process of committing
+17/04/12 21:51:18 INFO mapred.LocalJobRunner: map
+17/04/12 21:51:18 INFO mapred.Task: Task 'attempt_local1307245161_0001_m_000013_0' done.
+17/04/12 21:51:18 INFO mapred.LocalJobRunner: Finishing task: attempt_local1307245161_0001_m_000013_0
+17/04/12 21:51:18 INFO mapred.LocalJobRunner: Starting task: attempt_local1307245161_0001_m_000014_0
+17/04/12 21:51:18 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 1
+17/04/12 21:51:18 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+17/04/12 21:51:18 INFO util.ProcfsBasedProcessTree: ProcfsBasedProcessTree currently is supported only on Linux.
+17/04/12 21:51:18 INFO mapred.Task:  Using ResourceCalculatorProcessTree : null
+17/04/12 21:51:18 INFO mapred.MapTask: Processing split: file:/ratings.csv:469762048+33554432
+17/04/12 21:51:18 INFO mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+17/04/12 21:51:18 INFO mapred.MapTask: mapreduce.task.io.sort.mb: 100
+17/04/12 21:51:18 INFO mapred.MapTask: soft limit at 83886080
+17/04/12 21:51:18 INFO mapred.MapTask: bufstart = 0; bufvoid = 104857600
+17/04/12 21:51:18 INFO mapred.MapTask: kvstart = 26214396; length = 6553600
+17/04/12 21:51:18 INFO mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+17/04/12 21:51:18 INFO mapreduce.Job:  map 100% reduce 0%
+17/04/12 21:51:18 INFO mapred.LocalJobRunner: 
+17/04/12 21:51:18 INFO mapred.MapTask: Starting flush of map output
+17/04/12 21:51:18 INFO mapred.MapTask: Spilling map output
+17/04/12 21:51:18 INFO mapred.MapTask: bufstart = 0; bufend = 18330405; bufvoid = 104857600
+17/04/12 21:51:18 INFO mapred.MapTask: kvstart = 26214396(104857584); kvend = 21326292(85305168); length = 4888105/6553600
+17/04/12 21:51:19 INFO mapreduce.Job:  map 82% reduce 0%
+17/04/12 21:51:19 INFO mapred.MapTask: Finished spill 0
+17/04/12 21:51:20 INFO mapred.Task: Task:attempt_local1307245161_0001_m_000014_0 is done. And is in the process of committing
+17/04/12 21:51:20 INFO mapred.LocalJobRunner: map
+17/04/12 21:51:20 INFO mapred.Task: Task 'attempt_local1307245161_0001_m_000014_0' done.
+17/04/12 21:51:20 INFO mapred.LocalJobRunner: Finishing task: attempt_local1307245161_0001_m_000014_0
+17/04/12 21:51:20 INFO mapred.LocalJobRunner: Starting task: attempt_local1307245161_0001_m_000015_0
+17/04/12 21:51:20 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 1
+17/04/12 21:51:20 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+17/04/12 21:51:20 INFO util.ProcfsBasedProcessTree: ProcfsBasedProcessTree currently is supported only on Linux.
+17/04/12 21:51:20 INFO mapred.Task:  Using ResourceCalculatorProcessTree : null
+17/04/12 21:51:20 INFO mapred.MapTask: Processing split: file:/ratings.csv:503316480+30127931
+17/04/12 21:51:20 INFO mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+17/04/12 21:51:20 INFO mapred.MapTask: mapreduce.task.io.sort.mb: 100
+17/04/12 21:51:20 INFO mapred.MapTask: soft limit at 83886080
+17/04/12 21:51:20 INFO mapred.MapTask: bufstart = 0; bufvoid = 104857600
+17/04/12 21:51:20 INFO mapred.MapTask: kvstart = 26214396; length = 6553600
+17/04/12 21:51:20 INFO mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+17/04/12 21:51:20 INFO mapreduce.Job:  map 100% reduce 0%
+17/04/12 21:51:20 INFO mapred.LocalJobRunner: 
+17/04/12 21:51:20 INFO mapred.MapTask: Starting flush of map output
+17/04/12 21:51:20 INFO mapred.MapTask: Spilling map output
+17/04/12 21:51:20 INFO mapred.MapTask: bufstart = 0; bufend = 16448310; bufvoid = 104857600
+17/04/12 21:51:20 INFO mapred.MapTask: kvstart = 26214396(104857584); kvend = 21828184(87312736); length = 4386213/6553600
+17/04/12 21:51:21 INFO mapreduce.Job:  map 88% reduce 0%
+17/04/12 21:51:21 INFO mapred.MapTask: Finished spill 0
+17/04/12 21:51:21 INFO mapred.Task: Task:attempt_local1307245161_0001_m_000015_0 is done. And is in the process of committing
+17/04/12 21:51:21 INFO mapred.LocalJobRunner: map
+17/04/12 21:51:21 INFO mapred.Task: Task 'attempt_local1307245161_0001_m_000015_0' done.
+17/04/12 21:51:21 INFO mapred.LocalJobRunner: Finishing task: attempt_local1307245161_0001_m_000015_0
+17/04/12 21:51:21 INFO mapred.LocalJobRunner: Starting task: attempt_local1307245161_0001_m_000016_0
+17/04/12 21:51:21 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 1
+17/04/12 21:51:21 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+17/04/12 21:51:21 INFO util.ProcfsBasedProcessTree: ProcfsBasedProcessTree currently is supported only on Linux.
+17/04/12 21:51:21 INFO mapred.Task:  Using ResourceCalculatorProcessTree : null
+17/04/12 21:51:21 INFO mapred.MapTask: Processing split: file:/movies.csv:0+1397542
+17/04/12 21:51:21 INFO mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+17/04/12 21:51:21 INFO mapred.MapTask: mapreduce.task.io.sort.mb: 100
+17/04/12 21:51:21 INFO mapred.MapTask: soft limit at 83886080
+17/04/12 21:51:21 INFO mapred.MapTask: bufstart = 0; bufvoid = 104857600
+17/04/12 21:51:21 INFO mapred.MapTask: kvstart = 26214396; length = 6553600
+17/04/12 21:51:21 INFO mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+17/04/12 21:51:22 INFO mapred.LocalJobRunner: 
+17/04/12 21:51:22 INFO mapred.MapTask: Starting flush of map output
+17/04/12 21:51:22 INFO mapred.MapTask: Spilling map output
+17/04/12 21:51:22 INFO mapred.MapTask: bufstart = 0; bufend = 948196; bufvoid = 104857600
+17/04/12 21:51:22 INFO mapred.MapTask: kvstart = 26214396(104857584); kvend = 26105288(104421152); length = 109109/6553600
+17/04/12 21:51:22 INFO mapred.MapTask: Finished spill 0
+17/04/12 21:51:22 INFO mapred.Task: Task:attempt_local1307245161_0001_m_000016_0 is done. And is in the process of committing
+17/04/12 21:51:22 INFO mapred.LocalJobRunner: map
+17/04/12 21:51:22 INFO mapred.Task: Task 'attempt_local1307245161_0001_m_000016_0' done.
+17/04/12 21:51:22 INFO mapred.LocalJobRunner: Finishing task: attempt_local1307245161_0001_m_000016_0
+17/04/12 21:51:22 INFO mapred.LocalJobRunner: map task executor complete.
+17/04/12 21:51:22 INFO mapred.LocalJobRunner: Waiting for reduce tasks
+17/04/12 21:51:22 INFO mapred.LocalJobRunner: Starting task: attempt_local1307245161_0001_r_000000_0
+17/04/12 21:51:22 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 1
+17/04/12 21:51:22 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+17/04/12 21:51:22 INFO util.ProcfsBasedProcessTree: ProcfsBasedProcessTree currently is supported only on Linux.
+17/04/12 21:51:22 INFO mapred.Task:  Using ResourceCalculatorProcessTree : null
+17/04/12 21:51:22 INFO mapred.ReduceTask: Using ShuffleConsumerPlugin: org.apache.hadoop.mapreduce.task.reduce.Shuffle@7c2548b0
+17/04/12 21:51:22 INFO reduce.MergeManagerImpl: MergerManager: memoryLimit=375442624, maxSingleShuffleLimit=93860656, mergeThreshold=247792144, ioSortFactor=10, memToMemMergeOutputsThreshold=10
+17/04/12 21:51:22 INFO reduce.EventFetcher: attempt_local1307245161_0001_r_000000_0 Thread started: EventFetcher for fetching Map Completion Events
+17/04/12 21:51:22 INFO reduce.LocalFetcher: localfetcher#1 about to shuffle output of map attempt_local1307245161_0001_m_000003_0 decomp: 21535568 len: 21535572 to MEMORY
+17/04/12 21:51:22 INFO reduce.InMemoryMapOutput: Read 21535568 bytes from map-output for attempt_local1307245161_0001_m_000003_0
+17/04/12 21:51:22 INFO reduce.MergeManagerImpl: closeInMemoryFile -> map-output of size: 21535568, inMemoryMapOutputs.size() -> 1, commitMemory -> 0, usedMemory ->21535568
+17/04/12 21:51:22 INFO reduce.LocalFetcher: localfetcher#1 about to shuffle output of map attempt_local1307245161_0001_m_000016_0 decomp: 1002761 len: 1002765 to MEMORY
+17/04/12 21:51:22 INFO reduce.InMemoryMapOutput: Read 1002761 bytes from map-output for attempt_local1307245161_0001_m_000016_0
+17/04/12 21:51:22 INFO reduce.MergeManagerImpl: closeInMemoryFile -> map-output of size: 1002761, inMemoryMapOutputs.size() -> 2, commitMemory -> 21535568, usedMemory ->22538329
+17/04/12 21:51:22 INFO reduce.LocalFetcher: localfetcher#1 about to shuffle output of map attempt_local1307245161_0001_m_000009_0 decomp: 21543252 len: 21543256 to MEMORY
+17/04/12 21:51:22 INFO reduce.InMemoryMapOutput: Read 21543252 bytes from map-output for attempt_local1307245161_0001_m_000009_0
+17/04/12 21:51:22 INFO reduce.MergeManagerImpl: closeInMemoryFile -> map-output of size: 21543252, inMemoryMapOutputs.size() -> 3, commitMemory -> 22538329, usedMemory ->44081581
+17/04/12 21:51:22 INFO reduce.LocalFetcher: localfetcher#1 about to shuffle output of map attempt_local1307245161_0001_m_000015_0 decomp: 18641420 len: 18641424 to MEMORY
+17/04/12 21:51:22 INFO reduce.InMemoryMapOutput: Read 18641420 bytes from map-output for attempt_local1307245161_0001_m_000015_0
+17/04/12 21:51:22 INFO reduce.MergeManagerImpl: closeInMemoryFile -> map-output of size: 18641420, inMemoryMapOutputs.size() -> 4, commitMemory -> 44081581, usedMemory ->62723001
+17/04/12 21:51:22 INFO reduce.LocalFetcher: localfetcher#1 about to shuffle output of map attempt_local1307245161_0001_m_000002_0 decomp: 21524654 len: 21524658 to MEMORY
+17/04/12 21:51:22 INFO reduce.InMemoryMapOutput: Read 21524654 bytes from map-output for attempt_local1307245161_0001_m_000002_0
+17/04/12 21:51:22 INFO reduce.MergeManagerImpl: closeInMemoryFile -> map-output of size: 21524654, inMemoryMapOutputs.size() -> 5, commitMemory -> 62723001, usedMemory ->84247655
+17/04/12 21:51:22 INFO reduce.LocalFetcher: localfetcher#1 about to shuffle output of map attempt_local1307245161_0001_m_000008_0 decomp: 21538730 len: 21538734 to MEMORY
+17/04/12 21:51:22 INFO reduce.InMemoryMapOutput: Read 21538730 bytes from map-output for attempt_local1307245161_0001_m_000008_0
+17/04/12 21:51:22 INFO reduce.MergeManagerImpl: closeInMemoryFile -> map-output of size: 21538730, inMemoryMapOutputs.size() -> 6, commitMemory -> 84247655, usedMemory ->105786385
+17/04/12 21:51:22 INFO reduce.LocalFetcher: localfetcher#1 about to shuffle output of map attempt_local1307245161_0001_m_000001_0 decomp: 21636106 len: 21636110 to MEMORY
+17/04/12 21:51:22 INFO reduce.InMemoryMapOutput: Read 21636106 bytes from map-output for attempt_local1307245161_0001_m_000001_0
+17/04/12 21:51:22 INFO reduce.MergeManagerImpl: closeInMemoryFile -> map-output of size: 21636106, inMemoryMapOutputs.size() -> 7, commitMemory -> 105786385, usedMemory ->127422491
+17/04/12 21:51:22 INFO reduce.LocalFetcher: localfetcher#1 about to shuffle output of map attempt_local1307245161_0001_m_000014_0 decomp: 20774461 len: 20774465 to MEMORY
+17/04/12 21:51:22 INFO reduce.InMemoryMapOutput: Read 20774461 bytes from map-output for attempt_local1307245161_0001_m_000014_0
+17/04/12 21:51:22 INFO reduce.MergeManagerImpl: closeInMemoryFile -> map-output of size: 20774461, inMemoryMapOutputs.size() -> 8, commitMemory -> 127422491, usedMemory ->148196952
+17/04/12 21:51:22 INFO reduce.LocalFetcher: localfetcher#1 about to shuffle output of map attempt_local1307245161_0001_m_000007_0 decomp: 21557226 len: 21557230 to MEMORY
+17/04/12 21:51:22 INFO mapreduce.Job:  map 100% reduce 0%
+17/04/12 21:51:22 INFO reduce.InMemoryMapOutput: Read 21557226 bytes from map-output for attempt_local1307245161_0001_m_000007_0
+17/04/12 21:51:22 INFO reduce.MergeManagerImpl: closeInMemoryFile -> map-output of size: 21557226, inMemoryMapOutputs.size() -> 9, commitMemory -> 148196952, usedMemory ->169754178
+17/04/12 21:51:22 INFO reduce.LocalFetcher: localfetcher#1 about to shuffle output of map attempt_local1307245161_0001_m_000013_0 decomp: 20753228 len: 20753232 to MEMORY
+17/04/12 21:51:22 INFO reduce.InMemoryMapOutput: Read 20753228 bytes from map-output for attempt_local1307245161_0001_m_000013_0
+17/04/12 21:51:22 INFO reduce.MergeManagerImpl: closeInMemoryFile -> map-output of size: 20753228, inMemoryMapOutputs.size() -> 10, commitMemory -> 169754178, usedMemory ->190507406
+17/04/12 21:51:22 INFO reduce.LocalFetcher: localfetcher#1 about to shuffle output of map attempt_local1307245161_0001_m_000000_0 decomp: 22511300 len: 22511304 to MEMORY
+17/04/12 21:51:22 INFO reduce.InMemoryMapOutput: Read 22511300 bytes from map-output for attempt_local1307245161_0001_m_000000_0
+17/04/12 21:51:22 INFO reduce.MergeManagerImpl: closeInMemoryFile -> map-output of size: 22511300, inMemoryMapOutputs.size() -> 11, commitMemory -> 190507406, usedMemory ->213018706
+17/04/12 21:51:22 INFO reduce.LocalFetcher: localfetcher#1 about to shuffle output of map attempt_local1307245161_0001_m_000006_0 decomp: 21540634 len: 21540638 to MEMORY
+17/04/12 21:51:22 INFO reduce.InMemoryMapOutput: Read 21540634 bytes from map-output for attempt_local1307245161_0001_m_000006_0
+17/04/12 21:51:22 INFO reduce.MergeManagerImpl: closeInMemoryFile -> map-output of size: 21540634, inMemoryMapOutputs.size() -> 12, commitMemory -> 213018706, usedMemory ->234559340
+17/04/12 21:51:22 INFO reduce.LocalFetcher: localfetcher#1 about to shuffle output of map attempt_local1307245161_0001_m_000012_0 decomp: 20763972 len: 20763976 to MEMORY
+17/04/12 21:51:22 INFO reduce.InMemoryMapOutput: Read 20763972 bytes from map-output for attempt_local1307245161_0001_m_000012_0
+17/04/12 21:51:22 INFO reduce.MergeManagerImpl: closeInMemoryFile -> map-output of size: 20763972, inMemoryMapOutputs.size() -> 13, commitMemory -> 234559340, usedMemory ->255323312
+17/04/12 21:51:22 INFO reduce.MergeManagerImpl: Starting inMemoryMerger's merge since commitMemory=255323312 > mergeThreshold=247792144. Current usedMemory=255323312
+17/04/12 21:51:22 INFO reduce.MergeThread: InMemoryMerger - Thread to merge in-memory shuffled map-outputs: Starting merge with 13 segments, while ignoring 0 segments
+17/04/12 21:51:22 INFO reduce.LocalFetcher: localfetcher#1 about to shuffle output of map attempt_local1307245161_0001_m_000005_0 decomp: 21530247 len: 21530251 to MEMORY
+17/04/12 21:51:22 INFO reduce.MergeManagerImpl: Initiating in-memory merge with 13 segments...
+17/04/12 21:51:22 INFO mapred.Merger: Merging 13 sorted segments
+17/04/12 21:51:22 INFO mapred.Merger: Down to the last merge-pass, with 13 segments left of total size: 255323234 bytes
+17/04/12 21:51:22 INFO reduce.InMemoryMapOutput: Read 21530247 bytes from map-output for attempt_local1307245161_0001_m_000005_0
+17/04/12 21:51:22 INFO reduce.MergeManagerImpl: closeInMemoryFile -> map-output of size: 21530247, inMemoryMapOutputs.size() -> 1, commitMemory -> 0, usedMemory ->276853559
+17/04/12 21:51:22 INFO reduce.LocalFetcher: localfetcher#1 about to shuffle output of map attempt_local1307245161_0001_m_000011_0 decomp: 21058599 len: 21058603 to MEMORY
+17/04/12 21:51:22 INFO reduce.InMemoryMapOutput: Read 21058599 bytes from map-output for attempt_local1307245161_0001_m_000011_0
+17/04/12 21:51:22 INFO reduce.MergeManagerImpl: closeInMemoryFile -> map-output of size: 21058599, inMemoryMapOutputs.size() -> 2, commitMemory -> 21530247, usedMemory ->297912158
+17/04/12 21:51:22 INFO reduce.LocalFetcher: localfetcher#1 about to shuffle output of map attempt_local1307245161_0001_m_000004_0 decomp: 21546176 len: 21546180 to MEMORY
+17/04/12 21:51:22 INFO reduce.InMemoryMapOutput: Read 21546176 bytes from map-output for attempt_local1307245161_0001_m_000004_0
+17/04/12 21:51:22 INFO reduce.MergeManagerImpl: closeInMemoryFile -> map-output of size: 21546176, inMemoryMapOutputs.size() -> 3, commitMemory -> 42588846, usedMemory ->319458334
+17/04/12 21:51:22 INFO reduce.LocalFetcher: localfetcher#1 about to shuffle output of map attempt_local1307245161_0001_m_000010_0 decomp: 21548930 len: 21548934 to MEMORY
+17/04/12 21:51:22 INFO reduce.InMemoryMapOutput: Read 21548930 bytes from map-output for attempt_local1307245161_0001_m_000010_0
+17/04/12 21:51:22 INFO reduce.MergeManagerImpl: closeInMemoryFile -> map-output of size: 21548930, inMemoryMapOutputs.size() -> 4, commitMemory -> 64135022, usedMemory ->341007264
+17/04/12 21:51:22 INFO reduce.EventFetcher: EventFetcher is interrupted.. Returning
+17/04/12 21:51:22 INFO mapred.LocalJobRunner: 17 / 17 copied.
+17/04/12 21:51:27 INFO reduce.MergeManagerImpl: attempt_local1307245161_0001_r_000000_0 Merge of the 13 files in-memory complete. Local file is /tmp/hadoop-margaretpearce/mapred/local/localRunner/margaretpearce/jobcache/job_local1307245161_0001/attempt_local1307245161_0001_r_000000_0/output/map_16.out.merged of size 255323292
+17/04/12 21:51:27 INFO reduce.MergeManagerImpl: finalMerge called with 4 in-memory map-outputs and 1 on-disk map-outputs
+17/04/12 21:51:27 INFO mapred.Merger: Merging 4 sorted segments
+17/04/12 21:51:27 INFO mapred.Merger: Down to the last merge-pass, with 4 segments left of total size: 85683928 bytes
+17/04/12 21:51:29 INFO reduce.MergeManagerImpl: Merged 4 segments, 85683952 bytes to disk to satisfy reduce memory limit
+17/04/12 21:51:29 INFO reduce.MergeManagerImpl: Merging 2 files, 341007242 bytes from disk
+17/04/12 21:51:29 INFO reduce.MergeManagerImpl: Merging 0 segments, 0 bytes from memory into reduce
+17/04/12 21:51:29 INFO mapred.Merger: Merging 2 sorted segments
+17/04/12 21:51:29 INFO mapred.Merger: Down to the last merge-pass, with 2 segments left of total size: 341007222 bytes
+17/04/12 21:51:29 INFO mapred.LocalJobRunner: 17 / 17 copied.
+17/04/12 21:51:29 INFO Configuration.deprecation: mapred.skip.on is deprecated. Instead, use mapreduce.job.skiprecords
+17/04/12 21:51:34 INFO mapred.LocalJobRunner: reduce > reduce
+17/04/12 21:51:34 INFO mapreduce.Job:  map 100% reduce 79%
+17/04/12 21:51:40 INFO mapred.LocalJobRunner: reduce > reduce
+17/04/12 21:51:40 INFO mapreduce.Job:  map 100% reduce 95%
+17/04/12 21:51:41 INFO mapred.Task: Task:attempt_local1307245161_0001_r_000000_0 is done. And is in the process of committing
+17/04/12 21:51:41 INFO mapred.LocalJobRunner: reduce > reduce
+17/04/12 21:51:41 INFO mapred.Task: Task attempt_local1307245161_0001_r_000000_0 is allowed to commit now
+17/04/12 21:51:41 INFO output.FileOutputCommitter: Saved output of task 'attempt_local1307245161_0001_r_000000_0' to file://output_titles/_temporary/0/task_local1307245161_0001_r_000000
+17/04/12 21:51:41 INFO mapred.LocalJobRunner: reduce > reduce
+17/04/12 21:51:41 INFO mapred.Task: Task 'attempt_local1307245161_0001_r_000000_0' done.
+17/04/12 21:51:41 INFO mapred.LocalJobRunner: Finishing task: attempt_local1307245161_0001_r_000000_0
+17/04/12 21:51:41 INFO mapred.LocalJobRunner: reduce task executor complete.
+17/04/12 21:51:42 INFO mapreduce.Job:  map 100% reduce 100%
+17/04/12 21:51:42 INFO mapreduce.Job: Job job_local1307245161_0001 completed successfully
+17/04/12 21:51:42 INFO mapreduce.Job: Counters: 30
+	File System Counters
+		FILE: Number of bytes read=7976946797
+		FILE: Number of bytes written=5641296419
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=20027543
+		Map output records=20027541
+		Map output bytes=300952141
+		Map output materialized bytes=341007332
+		Input split bytes=4855
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=27278
+		Reduce shuffle bytes=341007332
+		Reduce input records=20027541
+		Reduce output records=27278
+		Spilled Records=40055082
+		Shuffled Maps =17
+		Failed Shuffles=0
+		Merged Map outputs=17
+		GC time elapsed (ms)=1120
+		Total committed heap usage (bytes)=8538030080
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=0
+	File Output Format Counters 
+		Bytes Written=1188637
