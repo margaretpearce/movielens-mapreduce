@@ -18,7 +18,7 @@ public class MovieNameMapperTests {
     @Test
     public void testMapper() throws IOException {
         mapDriver.withInput(new LongWritable(1), new Text("3,Grumpier Old Men (1995),Comedy|Romance"));
-        mapDriver.withOutput(new IntWritable((3)), new Text("title\tGrumpier Old Men (1995)"))
+        mapDriver.withOutput(new IntWritable((3)), new Text("title\tGrumpier Old Men (1995)"));
         mapDriver.runTest();
     }
 }
